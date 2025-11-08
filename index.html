@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Proyecto Portafolio</title>
+</head>
+
+<body>
+    <!--Menu -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">CCVM</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">TECNOLÓGIAS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <button id="mod-osc" class="mod-osc">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+    </div>
+    <!--  INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Cristian Camilo Valderrama Morales</h1>
+            <h2>Desarrollador FullStack</h2>
+            <div class="redes">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/cristian-valderrama-developer" target="_blank"
+                    title="Visitar mi perfil en LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <!-- GitHub -->
+                <div class="github-contact">
+                    <a href="https://github.com/ccvalder" target="_blank" title="Visitar mi perfil en GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <span>@ccvalder</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Ingeniería de sistemas y tecnología en mantenimiento de equipos y cableado estructurado,</span> con
+                manejo de herramientas ofimáticas y programas POWER BI, PYTHON, MySQL, HTML, CSC, JAVA SCRIPT, VUEJS,
+                JAVA, SPRINGBOOT, GIT, GITHUB E ingles B1, Certificado en BIG DATA., DESARROLLO DE JAVA, EXCEL AVANZADO
+                Y POWER BI. Experiencia laboral en las áreas servicio al cliente, administrativa y sistemas realizando
+                análisis de datos, evaluación de información, soporte a usuarios, capacitación, cruces de bases de
+                datos, fidelización de clientes, reporte de novedades, control y seguimiento PQR. Competencias de
+                atención al detalle, orientación al logro, sentido de pertenencia, adaptabilidad al cambio, empatía y
+                actitud de servicio.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            27 años
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+57) 322 220 4212
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ccvalderrama14@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Suba, Bogotá, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                    <button id="descarga-cv" class="descarga-cv">
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- SECCION SKILLS -->
+                <section class="skills" id="skills">
+                    <h2 class="stack-title">Tecnológias</h2>
+
+                    <div class="stack-container">
+                        <!-- FRONTEND -->
+                        <div class="stack-group">
+                            <h3>INTERFAZ</h3>
+                            <div class="icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    alt="React" />
+                            </div>
+                        </div>
+
+                        <!-- BACKEND -->
+                        <div class="stack-group">
+                            <h3>BACKEND</h3>
+                            <div class="icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    alt="Node.js" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    alt="Java" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                    alt="Spring Boot" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                    alt="Django" />
+                            </div>
+                        </div>
+
+                        <!-- HERRAMIENTAS -->
+                        <div class="stack-group">
+                            <h3>HERRAMIENTAS</h3>
+                            <div class="icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    alt="Git" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    alt="VS Code" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                    alt="Figma" />
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/notion.svg"
+                                    alt="Notion" />
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/trello.svg"
+                                    alt="Trello"/>
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postman.svg"
+                                    alt="Postman"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === SECCIÓN PORTAFOLIO === -->
+                <section class="portfolio" id="portfolio">
+                    <h2 class="section-title">Portafolio</h2>
+                    <div class="portfolio-container">
+                        <div class="project-card">
+                            <img src="/img/p1.jpg" alt="Proyecto 1" />
+                            <div class="project-info">
+                                <h3>Dashboard de Análisis</h3>
+                                <p>Visualización de datos con Power BI y Python para toma de decisiones empresariales.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/img/p2.jpg" alt="Proyecto 2" />
+                            <div class="project-info">
+                                <h3>Web E-commerce</h3>
+                                <p>Tienda en línea desarrollada con Angular, HTML, CSS y Spring Boot como backend.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/img/p3.jpg" alt="Proyecto 3" />
+                            <div class="project-info">
+                                <h3>Sistema de PQR</h3>
+                                <p>Aplicación CRUD en Django para la gestión y seguimiento de solicitudes de usuarios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === SECCIÓN CONTACTO === -->
+                <section class="contact" id="contact">
+                    <h2 class="section-title">Contacto</h2>
+                    <div class="contact-container">
+                        <form class="contact-form">
+                            <input type="text" placeholder="Tu nombre" required />
+                            <input type="email" placeholder="Tu correo" required />
+                            <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+                            <button type="submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- === FOOTER === -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>© 2025 Cristian Camilo Valderrama Morales | Todos los derechos reservados</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script src="main.js"></script>
+
+
+</body>
+
+</html>
