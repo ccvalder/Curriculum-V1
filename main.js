@@ -78,8 +78,8 @@ if (downloadBtn) {
     // Forzar descarga del archivo PDF
     setTimeout(() => {
       const link = document.createElement("a");
-      link.href = "/img/HV-ATS- Cristian Valderrama-QA_V1.pdf"; // Ruta del archivo
-      link.download = "CV_Cristian_Valderrama.pdf";   // Nombre final del archivo
+      link.href = "./img/HV-ATS- Cristian Valderrama-QA_V1.pdf";
+      link.download = "CV_Cristian_Valderrama.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -112,3 +112,4 @@ function seleccionar() {
     icon.classList.add('fa-bars');
   }
 }
+
