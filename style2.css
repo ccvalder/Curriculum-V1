@@ -382,6 +382,91 @@ nav ul li a:hover::after {
   font-size: 0.9rem;
   color: #ccc;
 }
+.project-card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+.project-card video {
+  width: 100%;
+  display: block;
+}
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+/* === Botones de tecnologías === */
+.tech-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tech-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #2b2b2b;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tech-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.tech-btn:hover {
+  transform: translateY(-2px);
+  background-color: #3a3a3a;
+}
+
+/* Colores distintivos por tecnología */
+.tech-btn.react:hover {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.tech-btn.next:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.tech-btn.firebase:hover {
+  background-color: #ffca28;
+  color: #000;
+}
 
 /* === SECCIÓN CONTACTO === */
 .contact {
@@ -496,6 +581,51 @@ nav ul li a:hover::after {
 
   .sobremi .col {
     flex: 1 1 100%;
+  }
+}
+/* ===== Estilos del menú desplegable (móvil) ===== */
+@media (max-width: 768px) {
+  /* asegurar posición relativa para el menú absoluto */
+  nav {
+    position: relative;
+  }
+
+  /* menú cuando está oculto: nav ul se mantiene hidden por defecto (arriba) */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: rgba(20,20,20,0.95);
+    position: absolute;
+    top: 64px;
+    right: 20px;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    min-width: 180px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    z-index: 1000;
+  }
+
+  /* cuando la clase 'mostrar' está activa, mostrar el ul */
+  nav.mostrar ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+    padding: 0.5rem 0.4rem;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+
+  /* un pequeño ajuste visual para el icono de hamburguesa */
+  .nav-responsive i.fa-xmark {
+    color: #ff6b6b;
   }
 }
 /*Modo Oscuro*/
