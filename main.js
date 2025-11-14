@@ -60,7 +60,7 @@ proyectos.forEach(p => {
 
 
 //Descarga de CV
-// === DESCARGA DE CV CON ALERTA ===
+// === DESCARGA DE CURRICULUM CON ALERTA ===
 const downloadBtn = document.getElementById("descarga-cv");
 
 if (downloadBtn) {
@@ -75,9 +75,40 @@ if (downloadBtn) {
       color: "#f5f5f5"
     });
 
-    // Simular la descarga o redirigir al archivo real
+    // Forzar descarga del archivo PDF
     setTimeout(() => {
-      window.open("docs/CV_Cristian_Valderrama.pdf", "_blank");
+      const link = document.createElement("a");
+      link.href = "/img/HV-ATS- Cristian Valderrama-QA_V1.pdf"; // Ruta del archivo
+      link.download = "CV_Cristian_Valderrama.pdf";   // Nombre final del archivo
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }, 2000);
   });
+}
+
+
+// --- Menu hamburguesa: mostrar/ocultar en pantallas pequeñas ---
+function mostrarOcultarMenu() {
+  const nav = document.getElementById('nav');
+  const icon = document.querySelector('.nav-responsive i');
+  if (!nav) return;
+  nav.classList.toggle('mostrar');
+  // cambiar icono (hamburguesa <-> cruz)
+  if (icon) {
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  }
+}
+
+// Al seleccionar una opción del menú en móvil, ocultar el menú
+function seleccionar() {
+  const nav = document.getElementById('nav');
+  const icon = document.querySelector('.nav-responsive i');
+  if (!nav) return;
+  nav.classList.remove('mostrar');
+  if (icon) {
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
+  }
 }
