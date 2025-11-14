@@ -23,7 +23,7 @@
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">TECNOLÓGIAS</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -42,7 +42,7 @@
                 <img src="img/perfil.png" alt="">
             </div>
             <h1>Cristian Camilo Valderrama Morales</h1>
-            <h2>Desarrollador FullStack</h2>
+            <h2>Desarrollador FullStack/ QA Tester</h2>
             <div class="redes">
                 <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/cristian-valderrama-developer" target="_blank"
@@ -68,14 +68,21 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Ingeniería de sistemas y tecnología en mantenimiento de equipos y cableado estructurado,</span> con
+            <!--<p><span>Ingeniería de sistemas y tecnología en mantenimiento de equipos y cableado estructurado,</span> con
                 manejo de herramientas ofimáticas y programas POWER BI, PYTHON, MySQL, HTML, CSC, JAVA SCRIPT, VUEJS,
                 JAVA, SPRINGBOOT, GIT, GITHUB E ingles B1, Certificado en BIG DATA., DESARROLLO DE JAVA, EXCEL AVANZADO
                 Y POWER BI. Experiencia laboral en las áreas servicio al cliente, administrativa y sistemas realizando
                 análisis de datos, evaluación de información, soporte a usuarios, capacitación, cruces de bases de
                 datos, fidelización de clientes, reporte de novedades, control y seguimiento PQR. Competencias de
                 atención al detalle, orientación al logro, sentido de pertenencia, adaptabilidad al cambio, empatía y
-                actitud de servicio.</p>
+                actitud de servicio.</p>-->
+            <p><span>Soy Ingeniero de Sistemas orientado al desarrollo de software y al aseguramiento de calidad,</span>
+                con experiencia en análisis de datos, soporte a usuarios y gestión de información. Me destaco por mi
+                atención al detalle, adaptabilidad y pensamiento crítico, habilidades que me permiten aportar tanto en
+                la creación como en la validación de soluciones tecnológicas. Tengo una sólida base técnica,
+                certificaciones en áreas de desarrollo y análisis, y una actitud de aprendizaje continuo que impulsa mi
+                crecimiento como desarrollador y QA tester. Mi enfoque combina servicio, análisis y colaboración para
+                transformar necesidades en soluciones funcionales y eficientes.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -158,9 +165,9 @@
                                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/notion.svg"
                                     alt="Notion" />
                                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/trello.svg"
-                                    alt="Trello"/>
+                                    alt="Trello" />
                                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postman.svg"
-                                    alt="Postman"/>
+                                    alt="Postman" />
                             </div>
                         </div>
                     </div>
@@ -171,30 +178,120 @@
                     <h2 class="section-title">Portafolio</h2>
                     <div class="portfolio-container">
                         <div class="project-card">
-                            <img src="/img/p1.jpg" alt="Proyecto 1" />
-                            <div class="project-info">
-                                <h3>Dashboard de Análisis</h3>
-                                <p>Visualización de datos con Power BI y Python para toma de decisiones empresariales.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img src="/img/p2.jpg" alt="Proyecto 2" />
+                            <video controls muted autoplay loop>
+                                <source src="./img/Serisana - Enciende tu bienestar - Google Chrome.mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta el tag de video.
+                            </video>
                             <div class="project-info">
                                 <h3>Web E-commerce</h3>
-                                <p>Tienda en línea desarrollada con Angular, HTML, CSS y Spring Boot como backend.</p>
+                                <p>
+                                    Desarrollo de un E-commerce responsivo con React, aplicando validación visual y
+                                    funcional exhaustiva de componentes. Se garantizó una presentación de productos y
+                                    navegación impecable en Múltiples dispositivos ( Responsive Testing ), verificando
+                                    también la correcta funcionalidad de la simulación del flujo de compra .
+
+                                </p>
+                                <a href="https://serisanavelasco.web.app/" target="_blank" class="project-link-btn">
+                                    Ver Proyecto en Vivo 🔗
+                                </a>
+                                <!-- 🔹 Botones de tecnologías utilizadas -->
+                                <div class="tech-buttons">
+                                    <button class="tech-btn react">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                            alt="React" />
+                                        React
+                                    </button>
+
+                                    <button class="tech-btn next">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                            alt="Next.js" />
+                                        Next.js
+                                    </button>
+
+                                    <button class="tech-btn firebase">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                            alt="Firebase" />
+                                        Firebase
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="/img/p3.jpg" alt="Proyecto 2" />
+                            <div class="project-info">
+                                <h3>Sistema de PQR</h3>
+                                <p>
+                                    Aplicación CRUD en Django para la gestión y seguimiento de solicitudes de usuarios.
+                                </p>
+
+                                <!-- 🔹 Botones de tecnologías utilizadas -->
+                                <div class="tech-buttons">
+                                    <button class="tech-btn python">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                            alt="Python" />
+                                        Python
+                                    </button>
+
+                                    <button class="tech-btn django">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                            alt="Django" />
+                                        Django
+                                    </button>
+
+                                    <button class="tech-btn github">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub" />
+                                        GitHub
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         <div class="project-card">
-                            <img src="/img/p3.jpg" alt="Proyecto 3" />
+                            <img src="/img/p1.jpg" alt="Proyecto 3" />
                             <div class="project-info">
-                                <h3>Sistema de PQR</h3>
-                                <p>Aplicación CRUD en Django para la gestión y seguimiento de solicitudes de usuarios.
+                                <h3>Dashboard de Análisis</h3>
+                                <p>
+                                    Visualización de datos con Power BI y Python para toma de decisiones empresariales.
                                 </p>
+
+                                <!-- 🔹 Botones de tecnologías utilizadas -->
+                                <div class="tech-buttons">
+                                    <button class="tech-btn python">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                            alt="Python" />
+                                        Python
+                                    </button>
+
+                                    <button class="tech-btn pandas">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                            alt="Pandas" />
+                                        Pandas
+                                    </button>
+
+                                    <button class="tech-btn powerbi">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png"
+                                            alt="Power BI" />
+                                        Power BI
+                                    </button>
+
+                                    <button class="tech-btn mysql">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                            alt="MySQL" />
+                                        MySQL
+                                    </button>
+
+                                    <button class="tech-btn github">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                            alt="GitHub" />
+                                        GitHub
+                                    </button>
+                                </div>
                             </div>
                         </div>
+
+
                     </div>
                 </section>
 
